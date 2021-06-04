@@ -1,0 +1,17 @@
+C:\Users\UnderKo\source\repos\ImageConverter\ImageConverter\bin\Release\ImageConverter.exe.config
+C:\Users\UnderKo\source\repos\ImageConverter\ImageConverter\bin\Release\ImageConverter.exe
+C:\Users\UnderKo\source\repos\ImageConverter\ImageConverter\bin\Release\ImageConverter.pdb
+C:\Users\UnderKo\source\repos\ImageConverter\ImageConverter\obj\Release\MainWindow.g.cs
+C:\Users\UnderKo\source\repos\ImageConverter\ImageConverter\obj\Release\UiControls\ComboBox.g.cs
+C:\Users\UnderKo\source\repos\ImageConverter\ImageConverter\obj\Release\App.g.cs
+C:\Users\UnderKo\source\repos\ImageConverter\ImageConverter\obj\Release\GeneratedInternalTypeHelper.g.cs
+C:\Users\UnderKo\source\repos\ImageConverter\ImageConverter\obj\Release\ImageConverter_MarkupCompile.cache
+C:\Users\UnderKo\source\repos\ImageConverter\ImageConverter\obj\Release\ImageConverter_MarkupCompile.lref
+C:\Users\UnderKo\source\repos\ImageConverter\ImageConverter\obj\Release\MainWindow.baml
+C:\Users\UnderKo\source\repos\ImageConverter\ImageConverter\obj\Release\UiControls\ComboBox.baml
+C:\Users\UnderKo\source\repos\ImageConverter\ImageConverter\obj\Release\ImageConverter.g.resources
+C:\Users\UnderKo\source\repos\ImageConverter\ImageConverter\obj\Release\ImageConverter.Properties.Resources.resources
+C:\Users\UnderKo\source\repos\ImageConverter\ImageConverter\obj\Release\ImageConverter.csproj.GenerateResource.cache
+C:\Users\UnderKo\source\repos\ImageConverter\ImageConverter\obj\Release\ImageConverter.csproj.CoreCompileInputs.cache
+C:\Users\UnderKo\source\repos\ImageConverter\ImageConverter\obj\Release\ImageConverter.exe
+C:\Users\UnderKo\source\repos\ImageConverter\ImageConverter\obj\Release\ImageConverter.pdb

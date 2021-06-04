@@ -13,6 +13,7 @@ namespace ImageConverter
     {
         public static bool OpenAndAddStackPanel(this StackPanel stackPanel)
         {
+            bool b = false;
             UInt16 count = 0;
             OpenFileDialog openFileDialog1 = new OpenFileDialog();
             openFileDialog1.InitialDirectory = @"C:\";
@@ -27,6 +28,7 @@ namespace ImageConverter
             {
                 if(stackPanel.Children.Count >= 8)
                 {
+                     
                     break;
                 }
                 if (file.isImageFormat())
@@ -39,9 +41,10 @@ namespace ImageConverter
                     };
                     stackPanel.Children.Add(l);
                     count++;
+                    b = true;
                 }  
             }
-            return true;
+            return b;
         }
     }
 }

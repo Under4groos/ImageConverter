@@ -57,8 +57,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="imgConvert.cs" />
-    <Compile Include="imgFormats.cs" />
+    <Compile Include="FormatsImage\Converter.cs" />
+    <Compile Include="FormatsImage\Formats.cs" />
+    <Compile Include="FormatsImage\GifToImages.cs" />
     <Compile Include="OpenFileDialogCon.cs" />
     <Compile Include="TimerTick.cs" />
     <Compile Include="UiControls\ComboBox.xaml.cs">
