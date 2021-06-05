@@ -77,7 +77,7 @@
                 </Grid>
             </Border>
             <StackPanel VerticalAlignment="Top" Margin="0,9,8,0" Orientation="Horizontal" HorizontalAlignment="Right">
-               
+
                 <Border Margin="0,0,10,0" Background="#19161B22" CornerRadius="3">
                     <Label  FontFamily="Microsoft YaHei UI" VerticalContentAlignment="Center" Padding="4,0" HorizontalContentAlignment="Center" FontSize="16"  Foreground="Black" MouseDown="Label_MouseDown">GitHub</Label>
                 </Border>
@@ -188,6 +188,7 @@
                     </Border>
                 </StackPanel>
             </Grid>
+            <Label VerticalAlignment="Bottom" FontSize="11" FontFamily="Impact" Foreground="#FF54626F" Margin="0,0,8,0" HorizontalAlignment="Right" Content="By UnderKo" HorizontalContentAlignment="Center" Opacity="0.7"/>
         </Grid>
     </Border>
 </Window>
