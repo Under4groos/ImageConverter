@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ImageConverter.FormatsImage
 {
-    class GifToImages
+    class GifToImages : IDisposable
     {
         private Image gifImage;
         private FrameDimension dimension;
@@ -26,6 +26,13 @@ namespace ImageConverter.FormatsImage
         {
             gifImage.SelectActiveFrame(dimension, index);  
             return gifImage.Clone() as Image;  
+        }
+ 
+
+        public void Dispose()
+        {
+            gifImage.Dispose();
+            FRAME_COUNT = 0; dimension = null;
         }
     }
 }
