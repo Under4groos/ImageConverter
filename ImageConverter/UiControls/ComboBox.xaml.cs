@@ -23,58 +23,44 @@ namespace ImageConverter.UiControls
         bool isOpen = false;
         public ComboBox()
         {
-            InitializeComponent();
-            
-            
-            
+            InitializeComponent();   
         }
-        public string GetTextContent()
-        {
-            return (string)CurText.Content;
-        }
+        public string GetTextContent() => CurText.Content as string;
+
+
         public void add(Label l) 
         {
- 
-            // l.VerticalAlignment = VerticalAlignment.Top;
             l.HorizontalContentAlignment = HorizontalAlignment.Center;
             l.VerticalContentAlignment = VerticalAlignment.Center;
             l.Foreground = new SolidColorBrush(Color.FromRgb(255,255,255));
             l.Padding = new Thickness(0);
             l.FontSize = 16;         
-            l.MouseDown += (o, e) =>
-            {
-                CurText.Content = (o as Label).Content;
-            };
+            l.MouseDown += (o, e) => CurText.Content = (o as Label).Content;
             ListLabel.Children.Add(l);
-           
-            CurText.Content = l.Content;
-            
+            CurText.Content = l.Content; 
         }
 
         private void CurText_MouseDown(object sender, MouseButtonEventArgs e)
         {
             isOpen = !isOpen;
             OC(isOpen);
-            
         }
         public void OC(bool i)
         {
-            
-            if (i)
+            switch (i)
             {
-
-                this.Height = CurText.ActualHeight + ListLabel.ActualHeight;
-            }
-            else {
-                this.Height = CurText.ActualHeight;
-                
-            }
-                
+                case true:
+                    this.Height = CurText.ActualHeight + ListLabel.ActualHeight;
+                    break;
+                case false:
+                    this.Height = CurText.ActualHeight;
+                    break;
+                default:
+                    break;
+            }       
         }
 
         private void UserControl_Loaded(object sender, RoutedEventArgs e)
-        {
-            OC(isOpen);
-        }
+        => OC(isOpen);
     }
 }

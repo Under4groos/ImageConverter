@@ -6,9 +6,9 @@
         xmlns:local="clr-namespace:ImageConverter"
         xmlns:UiControls="clr-namespace:ImageConverter.UiControls" x:Class="ImageConverter.MainWindow"
         mc:Ignorable="d" AllowsTransparency="True" WindowStyle="None" ResizeMode="NoResize" 
-        AllowDrop="True" Drop="Window_Drop"
+        AllowDrop="True" Drop="Window_Drop" 
         Title="MainWindow" Height="450" Width="800" Background="#00000000">
-    <Border Background="White" CornerRadius="12">
+    <Border Background="White" CornerRadius="12" BorderBrush="#197DFF" BorderThickness="1">
         <Grid>
             <Label VerticalAlignment="Top" FontSize="24" FontFamily="Impact" Foreground="#FF54626F" Margin="0,20,0,0" d:LayoutOverrides="Width" HorizontalAlignment="Center" Content="Image Converter"/>
             <Border x:Name="UpDownPanel" Width="25" Height="25" CornerRadius="14.5" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" MouseDown="Border_MouseDown_1">
@@ -22,17 +22,14 @@
                                 <Setter Property="Background" Value="#FF2474DC"/>
                             </Trigger>
                         </Style.Triggers>
-
                     </Style>
                 </Border.Style>
-                <Label Content="&lt;" HorizontalContentAlignment="Center" Padding="0" UseLayoutRounding="True" FontSize="30" VerticalContentAlignment="Center" Margin="-3,-10,0,-6" Foreground="White" FontFamily="Segoe Script"/>
+                <Label Content="&#xE72B;" HorizontalContentAlignment="Center" Padding="0" UseLayoutRounding="True" FontSize="18" VerticalContentAlignment="Center" Margin="-2,-9,-1,-8" Foreground="White" FontFamily="/ImageConverter;component/Font/#Segoe MDL2 Assets" RenderTransformOrigin="0.5,0.5">
+
+                </Label>
             </Border>
-
-
             <Border x:Name="SelectFiles" Visibility="Visible" Background="#F4F8FF" Margin="111,183,111,120">
                 <Grid>
-                    
-
                     <Label VerticalAlignment="Center" Margin="0,40,0,0" d:LayoutOverrides="Width" HorizontalAlignment="Center" Content="Or drop files here."/>
                     <Grid Margin="0,30,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" Width="200" Height="40">
                         <Grid.ColumnDefinitions>
@@ -51,19 +48,14 @@
                                             <Setter Property="Background" Value="#FF2474DC"/>
                                         </Trigger>
                                     </Style.Triggers>
-
                                 </Style>
                             </Border.Style>
                             <Grid>
-
                                 <Label FontSize="16" Foreground="White" Content="Choose Files" Margin="17,3,41,2" d:LayoutOverrides="Width, Height"/>
-                                <Label FontSize="24" Foreground="White" Content="10" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" FontFamily="Wingdings" Margin="0,3,5,1" HorizontalAlignment="Right" Width="31" Padding="0"/>
+                                <Label FontSize="20" Foreground="White" Content="&#xE710;" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="/ImageConverter;component/Font/#Segoe MDL2 Assets" Margin="0,2,4,2" HorizontalAlignment="Right" Width="34" Padding="0"/>
 
                             </Grid>
-
-
                         </Border>
-
                         <Border Grid.Column="2" d:LayoutOverrides="LeftMargin, RightMargin, TopMargin, BottomMargin" Height="Auto" Margin="0,2">
                             <Border.Style>
                                 <Style TargetType="{x:Type Border}">
@@ -78,12 +70,18 @@
 
                                 </Style>
                             </Border.Style>
+                            <Label FontSize="33" Foreground="White" Content="&#xE70E;" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" FontFamily="/ImageConverter;component/Font/#Segoe MDL2 Assets" Margin="0,1,5,3" HorizontalAlignment="Right" Width="34" Padding="0"/>
+
                         </Border>
                     </Grid>
                 </Grid>
             </Border>
-            
             <StackPanel VerticalAlignment="Top" Margin="0,9,8,0" Orientation="Horizontal" HorizontalAlignment="Right">
+               
+                <Border Margin="0,0,10,0" Background="#19161B22" CornerRadius="3">
+                    <Label  FontFamily="Microsoft YaHei UI" VerticalContentAlignment="Center" Padding="4,0" HorizontalContentAlignment="Center" FontSize="16"  Foreground="Black" MouseDown="Label_MouseDown">GitHub</Label>
+                </Border>
+                <Label Margin="0,0,10,0" FontFamily="Sitka Small" VerticalContentAlignment="Bottom" Padding="0" HorizontalContentAlignment="Center">v1.3</Label>
                 <Border Width="24" Height="24"   HorizontalAlignment="Right" Margin="0,0,4,0" MouseDown="Border_MouseDown_4">
                     <Border.Style>
                         <Style TargetType="{x:Type Border}">
@@ -93,14 +91,11 @@
                             <Style.Triggers>
                                 <Trigger Property="IsMouseOver" Value ="True">
                                     <Setter Property="Background" Value="#FF2474DC"/>
-                                    <Setter Property="CornerRadius" Value="10"/>
                                 </Trigger>
                             </Style.Triggers>
-
                         </Style>
                     </Border.Style>
-                    <Label Content="-" HorizontalContentAlignment="Center" Padding="0" UseLayoutRounding="True" FontSize="36" VerticalContentAlignment="Center" Margin="1,-17,2,6" Foreground="White" FontFamily="Segoe UI Semibold"/>
-
+                    <Label FontSize="18" Foreground="White" Content="&#xE738;" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="/ImageConverter;component/Font/#Segoe MDL2 Assets"  Padding="0" RenderTransformOrigin="0.5,0.5"/>
                 </Border>
                 <Border Width="24" Height="24" MouseDown="Border_MouseDown_3"  HorizontalAlignment="Right">
                     <Border.Style>
@@ -111,21 +106,17 @@
                             <Style.Triggers>
                                 <Trigger Property="IsMouseOver" Value ="True">
                                     <Setter Property="Background" Value="#FF2474DC"/>
-                                    <Setter Property="CornerRadius" Value="10"/>
                                 </Trigger>
                             </Style.Triggers>
-
                         </Style>
                     </Border.Style>
-                    <Label Content="r" HorizontalContentAlignment="Center" Padding="0" UseLayoutRounding="True" FontSize="24" VerticalContentAlignment="Center" Margin="0" Foreground="White" FontFamily="Webdings" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Label FontSize="18" Foreground="White" Content="&#xE711;" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="/ImageConverter;component/Font/#Segoe MDL2 Assets"  Padding="0" RenderTransformOrigin="0.5,0.5"/>
 
                 </Border>
             </StackPanel>
-
-
-            <Grid x:Name="SelectedDD" Visibility="Visible">
+            <Grid x:Name="SelectedDD" Visibility="Hidden">
                 <StackPanel Margin="10,82,10,37" x:Name="StackPanel"/>
-                <StackPanel  Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="10,0,0,10">
+                <StackPanel   Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="10,0,0,10">
                     <Border Width="58" Height="22"  MouseDown="Border_MouseDown_2">
                         <Border.Style>
                             <Style TargetType="{x:Type Border}">
@@ -137,7 +128,6 @@
                                         <Setter Property="Background" Value="#FF2474DC"/>
                                     </Trigger>
                                 </Style.Triggers>
-
                             </Style>
                         </Border.Style>
                         <Label HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0" UseLayoutRounding="True" Foreground="White" Content="Convert"/>
@@ -153,12 +143,11 @@
                                         <Setter Property="Background" Value="#FF2474DC"/>
                                     </Trigger>
                                 </Style.Triggers>
-
                             </Style>
                         </Border.Style>
                         <Label HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0" UseLayoutRounding="True" Foreground="White" Content="Add"/>
                     </Border>
-                    <Border x:Name="BorderCOnvertClear"  Width="46" Height="22" Margin="3,0,0,0" MouseDown="BorderCOnvertClear_MouseDown" >
+                    <Border x:Name="BorderCOnvertClear"  Width="49" Height="22" Margin="3,0,0,0" MouseDown="BorderCOnvertClear_MouseDown" >
                         <Border.Style>
                             <Style TargetType="{x:Type Border}">
                                 <Setter Property="Background" Value="#197DFF"/>
@@ -169,22 +158,36 @@
                                         <Setter Property="Background" Value="#FF2474DC"/>
                                     </Trigger>
                                 </Style.Triggers>
-
                             </Style>
                         </Border.Style>
-                        <Label HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0" UseLayoutRounding="True" Foreground="White" Content="Clear"/>
+                        <Label HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0" UseLayoutRounding="True" Foreground="White" Content="Clear all"/>
+                    </Border>
+                    <Border x:Name="BorderCOnvertClearAT"  Width="65" Height="22" Margin="3,0,0,0" MouseDown="BorderCOnvertClearAT_MouseDown" >
+                        <Border.Style>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="Background" Value="#197DFF"/>
+                                <Setter Property="Height" Value="35"/>
+                                <Setter Property="CornerRadius" Value="3"/>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value ="True">
+                                        <Setter Property="Background" Value="#FF2474DC"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Border.Style>
+                        <Label HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0" UseLayoutRounding="True" Foreground="White" Content="Clear select"/>
                     </Border>
                 </StackPanel>
                 <StackPanel VerticalAlignment="Top" Margin="10,52,0,0" Orientation="Horizontal">
                     <UiControls:ComboBox x:Name="TestUD" HorizontalAlignment="Left" Height="25" VerticalAlignment="Top" Width="137"/>
                     <Border Background="#197DFF" Height="25" CornerRadius="3" VerticalAlignment="Top" Margin="10,0,0,0">
-                        <Label x:Name="LodingProggress"  Foreground="White" > - </Label>
+                        <Label x:Name="LodingProggress"  Foreground="White" >-</Label>
+                    </Border>
+                    <Border Background="#197DFF" Height="25" CornerRadius="3" VerticalAlignment="Top" Margin="10,0,0,0">
+                        <Label x:Name="RunTime"  Foreground="White" >-</Label>
                     </Border>
                 </StackPanel>
-
             </Grid>
-
-
         </Grid>
     </Border>
 </Window>

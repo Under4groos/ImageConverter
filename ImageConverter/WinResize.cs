@@ -42,6 +42,8 @@ namespace ImageConverter
             };
             Wind.MouseLeftButtonDown += (sender, e) =>
             {
+                if (e.LeftButton != MouseButtonState.Pressed)
+                    return;
                 if (isMouseMoove && isMouseDoun == false)
                     Wind.DragMove();
             };

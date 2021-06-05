@@ -15,3 +15,4 @@ C:\Users\UnderKo\source\repos\ImageConverter\ImageConverter\obj\Release\ImageCon
 C:\Users\UnderKo\source\repos\ImageConverter\ImageConverter\obj\Release\ImageConverter.csproj.CoreCompileInputs.cache
 C:\Users\UnderKo\source\repos\ImageConverter\ImageConverter\obj\Release\ImageConverter.exe
 C:\Users\UnderKo\source\repos\ImageConverter\ImageConverter\obj\Release\ImageConverter.pdb
+C:\Users\UnderKo\source\repos\ImageConverter\ImageConverter\obj\Release\ImageConverter.csproj.AssemblyReference.cache

@@ -12,15 +12,10 @@ namespace ImageConverter.FormatsImage
     {
         private Image gifImage;
         private FrameDimension dimension;
-        public  int FRAME_COUNT
+        public int FRAME_COUNT
         {
             get;private set;
         }
-
-        /// <summary>
-        /// Конвертор из .Gif в images формат. 
-        /// </summary>
-        /// <param name="path"></param>
         public GifToImages(string path)
         {
             gifImage = Image.FromFile(path); 

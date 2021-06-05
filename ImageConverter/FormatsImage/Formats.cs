@@ -19,7 +19,7 @@ namespace ImageConverter
                 ".tiff",
                 ".ico"
             };
- 
+
 
 
         public static bool isImageFormat(this string format_)

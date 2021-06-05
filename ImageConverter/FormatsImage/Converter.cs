@@ -21,9 +21,7 @@ namespace ImageConverter
             
         }
         public Converter(Image image)
-        {
-            img = image;
-        }
+        => img = image;
 
         public void SetFormat(string str)
         {
@@ -51,22 +49,18 @@ namespace ImageConverter
                     imgform = ImageFormat.Icon;
                     break;
                 default:
-                    imgform = ImageFormat.Png;
+                    imgform = ImageFormat.Icon;
                     break;
 
             }
-        }
-
-
-        public string GetSize()
-        {
-            return $"_{img.Width}x{img.Height}_";
-        }
-                public void Save(string save_name)
-        {
             
+        }
+
+        public string GetSize() => $"_{img.Width}x{img.Height}_";
+
+        public void Save(string save_name)
+        {
             img.Save(save_name, imgform);
-             
             img.Dispose();
         }
     }
